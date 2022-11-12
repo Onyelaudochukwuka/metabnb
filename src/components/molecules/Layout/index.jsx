@@ -4,10 +4,13 @@ import { Navbar, Footer } from '..';
 
 import style from './index.module.scss';
 // eslint-disable-next-line
-const Layout = () => {
+const Layout = ({children, ...props}) => {
   return (
-    <section className={style.Layout}>
+    <section
+      {...props}
+      className={style.Layout}>
       <Navbar />
+      {children}
       <Footer />
     </section>
   );
