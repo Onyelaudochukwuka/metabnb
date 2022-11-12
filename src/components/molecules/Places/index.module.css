@@ -9,5 +9,10 @@
   font-weight: 700;
   margin-bottom: 20px;
 }
+.Places__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
 
 /*# sourceMappingURL=index.module.css.map */
