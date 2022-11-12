@@ -1,5 +1,6 @@
 import React from 'react';
 
+import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 
 import { Logo } from '../../../assets';
@@ -24,7 +25,7 @@ const navLinks = [
     to: '/community',
   },
 ];
-const Navbar = () => {
+const Navbar = ({ openPopUp }) => {
   return (
     <section className={style.Navbar}>
       <Logo className={style.Navbar__Logo} />
@@ -37,11 +38,15 @@ const Navbar = () => {
           ))
         }
       </div>
-      <span className={style.Navbar__Wallet}>
+      <span className={style.Navbar__Wallet} onClick={openPopUp}>
         Connect wallet
       </span>
     </section>
   );
+};
+
+Navbar.propTypes = {
+  openPopUp: PropTypes.func,
 };
 
 export default Navbar;

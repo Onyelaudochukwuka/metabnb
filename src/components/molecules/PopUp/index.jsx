@@ -9,7 +9,7 @@ import style from './index.module.scss';
 
 const PopUp = ({ popup, toggle }) => {
   return (
-    <section className={`${style.PopUp} ${popup ? style.show : style.hidden}`}>
+    <section className={`${style.PopUp} ${popup ? style.show : style.hide}`}>
       <div className={style.PopUp__container}>
         <header>
           <h3>Connect Wallet</h3>
