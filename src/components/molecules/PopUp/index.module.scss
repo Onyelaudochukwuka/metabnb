@@ -1,3 +1,24 @@
 .PopUp{
-    
+    position: fixed;
+    inset: 0;
+    background: rgba(64, 64, 64, 0.3);
+    z-index: 10;
+    display: grid;
+    place-items: center;
+    &__container{
+        background: #fff;
+        border-radius: 8px;
+        position: relative;
+        width: 50%;
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            border-bottom: 1px solid #CFD8DC;
+        }
+        &__wallets{
+            padding:30px;
+        }
+    }
 }
