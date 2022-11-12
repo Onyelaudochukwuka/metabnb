@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FooterLink = (props) => (
+const FooterLogo = (props) => (
   <svg
     {...props}
     width="233"
@@ -72,4 +72,4 @@ const FooterLink = (props) => (
     />
   </svg>
 );
-export default FooterLink;
+export default FooterLogo;
