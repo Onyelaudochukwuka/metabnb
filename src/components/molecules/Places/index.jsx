@@ -4,7 +4,7 @@ import style from './index.module.scss';
 const Places = () => {
   return (
     <section className={style.Places}>
-      <div>Places</div>
+      <h2>Inspiration for your next adventure</h2>
     </section>
   );
 };
