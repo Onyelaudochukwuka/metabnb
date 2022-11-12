@@ -35,6 +35,7 @@ const Navbar = () => {
         }
       </div>
       <span className={style.Navbar__Wallet}>
+        Get Started
       </span>
     </section>
   );

@@ -1,3 +1,7 @@
-
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
 
 /*# sourceMappingURL=index.module.css.map */
