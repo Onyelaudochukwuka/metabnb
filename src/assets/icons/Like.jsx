@@ -2,7 +2,7 @@ import React from 'react';
 
 import { PropTypes } from 'prop-types';
 
-const Love = ({ fill, ...props }) => (
+const Like = ({ fill, ...props }) => (
   <svg
     {...props}
     width="20"
@@ -31,11 +31,11 @@ const Love = ({ fill, ...props }) => (
     </defs>
   </svg>
 );
-Love.propTypes = {
+Like.propTypes = {
   fill: PropTypes.string,
 };
-Love.defaultProps = {
+Like.defaultProps = {
   fill: '#D7D7D7',
   // A02279',
 };
-export default Love;
+export default Like;
