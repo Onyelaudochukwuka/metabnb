@@ -1,3 +1,48 @@
-.Footer{
-    
+.Footer {
+  background-color: #1d1d1e;
+  color: #fff;
+  padding: 50px 50px;
+  display: flex;
+  justify-content: space-between;
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-basis: 30%;
+    &__socials {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+  }
+  &__right{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    flex-basis: 60%;
+    h3{
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    &__links{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+        flex-basis: 50%;
+        margin-right: 50px;
+        &__link{
+            font-size: 1.15rem;
+            font-weight: 400;
+            line-height: 35px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+    }
+  }
 }

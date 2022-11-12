@@ -1,11 +1,14 @@
 import React from 'react';
 
+import { Footer, Navbar } from '../../components';
+
 import style from './index.module.scss';
-// eslint-disable-next-line
+
 const PlaceToStay = () => {
   return (
     <section className={style.NFT}>
-      <div>NFT</div>
+      <Navbar />
+      <Footer />
     </section>
   );
 };
