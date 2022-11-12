@@ -7,7 +7,7 @@
     padding: 15px;
     color: $dark-text;
     border-radius: 15px;
-    width: 25%;
+    width: 100%;
     gap: 15px;
     position: relative;
     &__like{
@@ -26,5 +26,8 @@
     &__stars{
         display: flex;
         gap: 10px;
+    }
+    &__info{
+        font-size: 14px;
     }
 }
