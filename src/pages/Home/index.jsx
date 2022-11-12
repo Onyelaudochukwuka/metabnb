@@ -1,17 +1,18 @@
 import React from 'react';
 
-import { Cta, Footer, Hero, Navbar, Places, Sponsors } from '../../components';
+import { Cta, Hero, Places, Sponsors } from '../../components';
+import Layout from '../../components/molecules/Layout';
 
 import style from './index.module.scss';
 
 const Home = () => (
   <section className={style.Home}>
-    <Navbar />
-    <Hero />
-    <Sponsors />
-    <Places />
-    <Cta />
-    <Footer />
+    <Layout>
+      <Hero />
+      <Sponsors />
+      <Places />
+      <Cta />
+    </Layout>
   </section>
 );
 
