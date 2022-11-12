@@ -1,3 +1,17 @@
 .PlaceToStayContent{
+    padding: 50px;
+    &__filters{
+        display: flex;
+        justify-content: space-between;
+        &__icon{
+            display: flex;
+            gap: 30px;
+            border: 1px solid #B4B4B4;
+            padding: 10px;
+            border-radius: 8px;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
     
 }
