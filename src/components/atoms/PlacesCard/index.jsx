@@ -19,17 +19,17 @@ const PlacesCard = ({
   const nullStars = Array(5 - stars).fill(null);
   return (
     <section className={style.PlacesCard}>
-      <img src="/hero1.png" alt="places card" />
+      <img src={`/places/${image}.png`} alt="places card" />
       <Like className={style.PlacesCard__like} />
       <div className={style.PlacesCard__description}>
-        <small>Desert king</small>
+        <small>{title}</small>
         <small>
-          <b>1MBT per night</b>
+          <b>{payment}</b>
         </small>
       </div>
       <div className={style.PlacesCard__description}>
-        <small>2345km away</small>
-        <small>available for 2weeks stay</small>
+        <small>{distance}</small>
+        <small>{ availability }</small>
       </div>
       <div className={style.PlacesCard__stars}>
         {starsArr.map((_, i) => (
