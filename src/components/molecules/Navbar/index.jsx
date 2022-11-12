@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Logo from '../../../assets/icons/Logo';
+import { Logo } from '../../../assets';
 import style from './index.module.scss';
 // eslint-disable-next-line
 const navLinks = [
