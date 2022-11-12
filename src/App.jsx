@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
-import { Home, NFT } from './pages';
+import { Home, PlaceToStay } from './pages';
 
 const App = () => (
   <BrowserRouter>
     <ScrollToTop />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<NFT />} />
+      <Route path="/placetostay" element={<PlaceToStay />} />
     </Routes>
   </BrowserRouter>
 );
