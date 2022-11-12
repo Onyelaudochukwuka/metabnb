@@ -24,10 +24,8 @@ const navLinks = [
 const Navbar = () => {
   return (
     <section className={style.Navbar}>
-      <div>
-        <Logo />
-      </div>
-      <div>
+      <Logo className={style.Navbar__Logo} />
+      <div className={style.Navbar__links}>
         {
           navLinks.map(({ text, to }) => (
             <NavLink to={to} key={text}>
@@ -36,6 +34,8 @@ const Navbar = () => {
           ))
         }
       </div>
+      <span className={style.Navbar__Wallet}>
+      </span>
     </section>
   );
 };
