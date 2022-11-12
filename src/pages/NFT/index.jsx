@@ -9,5 +9,4 @@ const NFT = () => {
   );
 };
 
-// mastery by robert hilm
 export default NFT;
