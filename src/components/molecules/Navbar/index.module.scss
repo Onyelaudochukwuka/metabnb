@@ -11,11 +11,13 @@
         flex-basis: 40%;
         height: fit-content;
     }
-    &__Wallet{
+    &__openWallet{
         background: $main;
         padding: 10px 20px;
         color: #fff;
         border-radius: 10px;
         font-weight: 400;
+        cursor: pointer;
+        display: block;
     }
 }

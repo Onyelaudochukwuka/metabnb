@@ -30,15 +30,13 @@ const Navbar = ({ openPopUp }) => {
     <section className={style.Navbar}>
       <Logo className={style.Navbar__Logo} />
       <div className={style.Navbar__links}>
-        {
-          navLinks.map(({ text, to }) => (
-            <NavLink to={to} key={text} className={style.Navbar__links__link}>
-              {text}
-            </NavLink>
-          ))
-        }
+        {navLinks.map(({ text, to }) => (
+          <NavLink to={to} key={text} className={style.Navbar__links__link}>
+            {text}
+          </NavLink>
+        ))}
       </div>
-      <span className={style.Navbar__Wallet} onClick={openPopUp}>
+      <span className={style.Navbar__openWallet} onClick={openPopUp}>
         Connect wallet
       </span>
     </section>
