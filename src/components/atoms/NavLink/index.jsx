@@ -8,7 +8,9 @@ import style from './index.module.scss';
 const NavLink = ({ to, children, className, ...props }) => (
   <Link
     to={to}
-    className={(active) => `${style.active} ${style.NavLink}`}
+    className={({ isActive }) =>
+      `${style.NavLink} ${isActive ? style.active : ''}`
+    }
     {...props}
   >
     {children}
