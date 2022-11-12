@@ -1,7 +1,8 @@
 import React from 'react';
 
-const Logo = () => (
+const Logo = (props) => (
   <svg
+    {...props}
     width="233"
     height="38"
     viewBox="0 0 233 38"
