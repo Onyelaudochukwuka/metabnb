@@ -25,7 +25,7 @@
   ],
   "fileFormats": {
     "JSX": {
-      "name": "<name>.jsx",
+      "name": "index.jsx",
       "template": "./templates/blockName.jsx"
     },
     "JS": {
