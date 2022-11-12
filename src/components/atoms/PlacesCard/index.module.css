@@ -1,8 +1,12 @@
 .PlacesCard {
+  display: flex;
+  flex-direction: column;
   border: 1px solid #D7D7D7;
-  padding: 7.5px;
+  padding: 15px;
   color: #434343;
+  border-radius: 15px;
   width: 25%;
+  gap: 15px;
 }
 .PlacesCard img {
   width: 100%;
@@ -10,6 +14,10 @@
 .PlacesCard__description {
   display: flex;
   justify-content: space-between;
+}
+.PlacesCard__stars {
+  display: flex;
+  gap: 10px;
 }
 
 /*# sourceMappingURL=index.module.css.map */

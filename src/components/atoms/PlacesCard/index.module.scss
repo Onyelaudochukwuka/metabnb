@@ -1,15 +1,23 @@
 @import "../../../sass/values";
 
 .PlacesCard{
+    display: flex;
+    flex-direction: column;
     border: 1px solid $places-card-border;
-    padding: 7.5px;
+    padding: 15px;
     color: $dark-text;
+    border-radius: 15px;
     width: 25%;
+    gap: 15px;
     img{
         width: 100%;
     }
     &__description{
         display: flex;
         justify-content: space-between;
+    }
+    &__stars{
+        display: flex;
+        gap: 10px;
     }
 }
