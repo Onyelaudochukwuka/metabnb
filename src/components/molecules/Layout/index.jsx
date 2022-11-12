@@ -8,7 +8,7 @@ const Layout = ({ children, ...props }) => {
   const [popUp, setPopUp] = useState(true);
   return (
     <section {...props} className={style.Layout}>
-      <Navbar openPopUp={() => setPopUp((props) => !props)} />
+      <Navbar openPopUp={() => setPopUp(true)} />
       <PopUp {...{ popUp, toggle: () => setPopUp((props) => !props) }} />
       {children}
       <Footer />
