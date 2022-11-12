@@ -11,7 +11,7 @@ const Layout = ({ children, ...props }) => {
       {...props}
       className={style.Layout}>
       <Navbar />
-      <PopUp />
+      <PopUp {...{ popUp, toggle: () => setPopUp(props => !props) }} />
       {children}
       <Footer />
     </section>
