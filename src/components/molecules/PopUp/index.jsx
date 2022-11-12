@@ -7,9 +7,9 @@ import { Wallet } from '../../atoms';
 
 import style from './index.module.scss';
 
-const PopUp = ({ popup, toggle }) => {
+const PopUp = ({ popUp, toggle }) => {
   return (
-    <section className={`${style.PopUp} ${popup ? style.show : style.hide}`}>
+    <section className={`${style.PopUp} ${popUp ? style.show : style.hide}`}>
       <div className={style.PopUp__container}>
         <header>
           <h3>Connect Wallet</h3>
@@ -28,7 +28,7 @@ const PopUp = ({ popup, toggle }) => {
 };
 
 PopUp.propTypes = {
-  popup: PropTypes.bool,
+  popUp: PropTypes.bool,
   toggle: PropTypes.func,
 };
 export default PopUp;
