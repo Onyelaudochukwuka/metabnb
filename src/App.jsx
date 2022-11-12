@@ -7,7 +7,7 @@ const App = () => (
     <ScrollToTop />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/placetostay" element={<PlaceToStay />} />
+      <Route path="/place-to-stay" element={<PlaceToStay />} />
     </Routes>
   </BrowserRouter>
 );
