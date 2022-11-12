@@ -1,7 +1,8 @@
 import React from 'react';
 
-const OpenSea = () => (
+const OpenSea = (prop) => (
   <svg
+  {...prop}
     width="200"
     height="42"
     viewBox="0 0 200 42"
