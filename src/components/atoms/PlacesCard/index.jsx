@@ -1,6 +1,6 @@
 import React, { useId } from 'react';
 
-import { Star } from '../../../assets';
+import { Like, Star } from '../../../assets';
 
 import style from './index.module.scss';
 
@@ -11,6 +11,7 @@ const PlacesCard = () => {
   return (
     <section className={style.PlacesCard}>
       <img src="/hero1.png" alt='places card' />
+      <Like className={style.PlacesCard__like} />
       <div className={style.PlacesCard__description}><small>Desert king</small><small><b>1MBT per night</b></small></div>
       <div className={style.PlacesCard__description}><small>2345km away</small><small>available for 2weeks stay</small></div>
       <div className={style.PlacesCard__stars}>
