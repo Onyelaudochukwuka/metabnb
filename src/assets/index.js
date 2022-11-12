@@ -9,3 +9,4 @@ export { default as Facebook } from './icons/Facebook';
 export { default as Twitter } from './icons/Twitter';
 export { default as Instagram } from './icons/Instagram';
 export { default as Filter } from './icons/Filter';
+export { default as Close } from './icons/Close';
