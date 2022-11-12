@@ -12,12 +12,18 @@
         }
     align-items: center;
     &__links{
+        @media screen and (max-width: 900px) {
+            display: none;
+        }
         display: flex;
         justify-content: space-between;
         flex-basis: 40%;
         height: fit-content;
     }
     &__openWallet{
+        @media screen and (max-width: 900px) {
+            display: none;
+        }
         background: $main;
         padding: 10px 20px;
         color: #fff;
