@@ -4,6 +4,14 @@
     justify-content: space-between;
     align-items: center;
     padding: 100px 50px 0px;
+    @media screen and (max-width: 1200px) {
+            padding: 75px 30px;
+            flex-direction: column-reverse;
+        }
+    
+        @media screen and (max-width: 900px) {
+            padding: 50px 15px;
+        }
     color: $dark-text;
     &__container{
         flex-basis: 45%;
