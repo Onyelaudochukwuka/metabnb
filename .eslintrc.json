@@ -23,7 +23,6 @@
         "no-console": "off",
         "no-unused-vars": "off",
         "no-underscore-dangle": "off",
-        "no-plusplus": "off",
         "no-param-reassign": "off",
         "no-use-before-define": "off",
         "no-shadow": "off"
