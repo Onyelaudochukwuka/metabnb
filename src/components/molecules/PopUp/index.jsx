@@ -4,7 +4,12 @@ import style from './index.module.scss';
 const PopUp = () => {
   return (
     <section className={style.PopUp}>
-      <div>PopUp</div>
+      <div>
+        <header>
+          <h3>Connect Wallet</h3>
+          
+        </header>
+      </div>
     </section>
   );
 };
