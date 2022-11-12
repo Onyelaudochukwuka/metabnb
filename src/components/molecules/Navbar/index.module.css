@@ -3,6 +3,7 @@
   justify-content: space-between;
   padding: 15px 45px;
   align-items: center;
+  color: #434343;
 }
 .Navbar__links {
   display: flex;
