@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Navbar, Footer, PopUp } from '..';
+import { Navbar, Footer, PopUp } from '../..';
 
 import style from './index.module.scss';
 // eslint-disable-next-line
