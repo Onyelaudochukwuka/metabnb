@@ -7,6 +7,13 @@
   border-radius: 15px;
   width: 25%;
   gap: 15px;
+  position: relative;
+}
+.PlacesCard__like {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
 }
 .PlacesCard img {
   width: 100%;
