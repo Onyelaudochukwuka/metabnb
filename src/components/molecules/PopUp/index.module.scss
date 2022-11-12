@@ -17,6 +17,9 @@
             padding: 20px 30px;
             border-bottom: 1px solid #CFD8DC;
         }
+        &__close{
+            cursor: pointer;
+        }
         &__wallets{
             padding:30px;
             display: flex;
