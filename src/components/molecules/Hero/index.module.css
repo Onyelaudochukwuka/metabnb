@@ -5,28 +5,45 @@
   padding: 100px 50px 0px;
   color: #434343;
 }
-.Hero__conatiner {
-  flex-basis: 40%;
+.Hero__container {
+  flex-basis: 45%;
   display: flex;
   flex-direction: column;
   gap: 30px;
   min-height: 500px;
 }
-.Hero__conatiner h1 {
+.Hero__container h1 {
   font-weight: 400;
   font-size: 2.35rem;
   line-height: 78.4px;
 }
-.Hero__conatiner h1 span {
+.Hero__container h1 span {
   background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
   background-clip: text;
   color: transparent;
   font-weight: 700;
 }
-.Hero__conatiner p {
+.Hero__container p {
   font-size: 1.15rem;
   font-weight: 400;
   line-height: 35px;
+}
+.Hero__container__form {
+  display: flex;
+  font-size: 0.95rem;
+  width: 100%;
+}
+.Hero__container__form__input {
+  border: 1px solid #A3A3A3;
+  padding: 10px 20px;
+  border-radius: 8px 0px 0px 8px;
+  width: 100%;
+}
+.Hero__container__form__submit {
+  background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%) !important;
+  color: #fff;
+  padding: 20px 50px;
+  border-radius: 0px 8px 8px 0px;
 }
 .Hero__images {
   flex-basis: 40%;

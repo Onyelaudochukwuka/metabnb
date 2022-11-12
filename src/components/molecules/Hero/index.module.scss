@@ -5,8 +5,8 @@
     align-items: center;
     padding: 100px 50px 0px;
     color: $dark-text;
-    &__conatiner{
-        flex-basis: 40%;
+    &__container{
+        flex-basis: 45%;
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -26,6 +26,23 @@
             font-size: 1.15rem;
             font-weight: 400;
             line-height: 35px;
+        }
+        &__form{
+            display: flex;
+            font-size: 0.95rem;
+            width: 100%;
+            &__input{
+                border: 1px solid $input-border;
+                padding: 10px 20px;
+                border-radius: 8px 0px 0px 8px;
+                width: 100%;
+            }
+            &__submit{
+                background: $main !important;
+                color: #fff;
+                padding: 20px 50px;
+                border-radius: 0px 8px 8px 0px
+            }
         }
     }
  &__images{
