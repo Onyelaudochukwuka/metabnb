@@ -58,7 +58,8 @@
       "name": "index.scss"
     },
     "MODULE_CSS": {
-      "name": "<name>.module.css"
+      "name": "<name>.module.css",
+      "template": "./templates/index.scss"
     },
     "MODULE_SCSS": {
       "name": "index.module.scss"
