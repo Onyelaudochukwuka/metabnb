@@ -1,4 +1,5 @@
 import React from 'react';
+
 import style from './index.module.scss';
 // eslint-disable-next-line
 const images = ['hero2', 'hero1', 'hero4', 'hero3'];
