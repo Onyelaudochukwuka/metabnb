@@ -1,5 +1,5 @@
 import React from 'react';
-import { Hero, Navbar } from '../../components';
+import { Hero, Navbar, Sponsors } from '../../components';
 import style from './index.module.scss';
 // eslint-disable-next-line
 const Home = () => {
@@ -7,6 +7,7 @@ const Home = () => {
     <section className={style.Home}>
       <Navbar />
       <Hero />
+      <Sponsors />
     </section>
   );
 };
