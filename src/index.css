@@ -389,4 +389,8 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+body {
+  font-family: "Red Rose", cursive;
+}
+
 /*# sourceMappingURL=index.css.map */
