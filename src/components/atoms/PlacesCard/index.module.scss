@@ -3,4 +3,13 @@
 .PlacesCard{
     border: 1px solid $places-card-border;
     padding: 7.5px;
+    color: $dark-text;
+    width: 25%;
+    img{
+        width: 100%;
+    }
+    &__description{
+        display: flex;
+        justify-content: space-between;
+    }
 }

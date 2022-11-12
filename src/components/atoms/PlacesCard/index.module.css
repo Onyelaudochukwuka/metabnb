@@ -1,6 +1,15 @@
 .PlacesCard {
   border: 1px solid #D7D7D7;
   padding: 7.5px;
+  color: #434343;
+  width: 25%;
+}
+.PlacesCard img {
+  width: 100%;
+}
+.PlacesCard__description {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=index.module.css.map */
