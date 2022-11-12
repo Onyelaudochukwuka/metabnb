@@ -1,4 +1,4 @@
-import React, { useId } from 'react';
+import React, { useId, useState } from 'react';
 
 import PropTypes from 'prop-types';
 
@@ -17,26 +17,33 @@ const PlacesCard = ({
   const id = useId();
   const starsArr = Array(stars).fill(null);
   const nullStars = Array(5 - stars).fill(null);
+  const [liked, setLiked] = useState(false);
   return (
     <section className={style.PlacesCard}>
       <img src={`/places/${image}.png`} alt="places card" />
-      <Like className={style.PlacesCard__like} />
+      <Like
+        className={style.PlacesCard__like}
+        fill={liked ? 'red' : '#D7D7D7'}
+        onClick={() => setLiked((prop) => !prop)}
+      />
       <div className={style.PlacesCard__description}>
         <small>{title}</small>
         <small>
           <b>{payment}</b>
         </small>
       </div>
-      <div className={style.PlacesCard__description}>
+      <div
+        className={`${style.PlacesCard__description} ${style.PlacesCard__info}`}
+      >
         <small>{distance}</small>
-        <small>{ availability }</small>
+        <small>{availability}</small>
       </div>
       <div className={style.PlacesCard__stars}>
         {starsArr.map((_, i) => (
           <Star key={id + i} />
         ))}
         {nullStars.map((_, i) => (
-          <Star key={id + i} fill="#002279" />
+          <Star key={id + i} fill="#e96eb5" />
         ))}
       </div>
     </section>
