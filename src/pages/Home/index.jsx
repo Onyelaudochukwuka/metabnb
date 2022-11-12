@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Cta, Hero, Navbar, Places, Sponsors } from '../../components';
+import { Cta, Footer, Hero, Navbar, Places, Sponsors } from '../../components';
 
 import style from './index.module.scss';
 
@@ -11,6 +11,7 @@ const Home = () => (
     <Sponsors />
     <Places />
     <Cta />
+    <Footer />
   </section>
 );
 
