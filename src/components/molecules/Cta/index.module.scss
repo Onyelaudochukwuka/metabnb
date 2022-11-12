@@ -1,3 +1,68 @@
+@import "../../../sass/values";
 .Cta{
-    
+    background: $main;
+    display: flex;
+    padding: 50px;
+    position: relative;
+    height: 80vh;
+    align-items: center;
+    &__container{
+        h2{
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 1.15rem;
+            font-weight: 400;
+            line-height: 35px;
+            color: #fff;
+        }
+        button{
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px 50px;
+            font-weight: 400;
+            margin-top: 20px;
+            span{
+                background: $main;
+                background-clip: text;
+                color: transparent;
+                
+            }
+        }
+    }
+    &__images{
+        flex-basis: 50%;
+        width: 50%;
+        position: relative;
+        display: block;
+        height: 100%;
+        img{
+            width: calc(3/5 * 100%) !important;
+        }
+        &__cta1{
+            margin-right: 20px;
+            z-index: 1;
+            position: absolute;
+            top: 50px;
+
+        }
+        &__cta2{
+            position: absolute;
+            bottom: 0px;
+            right: 0;
+            z-index: 2;
+        }
+        &__cta3{
+            position: absolute;
+            right: 0;
+            z-index: 0;
+            top: -30px;
+        }
+    }
+    &__container{
+        flex-basis: 50%;
+    }
 }
