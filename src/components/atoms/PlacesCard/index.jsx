@@ -5,7 +5,8 @@ import style from './index.module.scss';
 const PlacesCard = () => {
   return (
     <section className={style.PlacesCard}>
-      <div>PlacesCard</div>
+      <img src="/hero1.png" alt='places card' />
+      <div><span>PlacesCard</span></div>
     </section>
   );
 };
