@@ -2,34 +2,44 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 70px;
+  padding: 100px 50px 0px;
+  color: #434343;
 }
 .Hero__conatiner {
   flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  min-height: 500px;
 }
 .Hero__conatiner h1 {
-  font-weight: 700;
-  font-size: 2.5rem;
+  font-weight: 400;
+  font-size: 2.35rem;
   line-height: 78.4px;
 }
 .Hero__conatiner h1 span {
   background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
   background-clip: text;
   color: transparent;
+  font-weight: 700;
+}
+.Hero__conatiner p {
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 35px;
 }
 .Hero__images {
   flex-basis: 40%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 20px;
   gap: 10px;
 }
 .Hero__images .hero2 {
-  margin-top: 60px;
+  margin-top: 100px;
 }
 .Hero__images .hero3 {
-  margin-top: -60px;
+  margin-top: -100px;
 }
 
 /*# sourceMappingURL=index.module.css.map */
