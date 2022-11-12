@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './index.module.scss';
 // eslint-disable-next-line
-const NFT = () => {
+const PlaceToStay = () => {
   return (
     <section className={style.NFT}>
       <div>NFT</div>
@@ -9,4 +9,4 @@ const NFT = () => {
   );
 };
 
-export default NFT;
+export default PlaceToStay;
