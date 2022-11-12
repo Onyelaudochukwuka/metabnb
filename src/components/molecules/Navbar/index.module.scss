@@ -1,5 +1,20 @@
+@import "../../../sass/values";
 .Navbar{
     display: flex;
     justify-content: space-between;
-    padding: 15px 30px;
+    padding: 15px 45px;
+    align-items: center;
+    &__links{
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 30%;
+        height: fit-content;
+    }
+    &__Wallet{
+        background: $main;
+        padding: 10px 20px;
+        color: #fff;
+        border-radius: 10px;
+        font-weight: 400;
+    }
 }
