@@ -1,0 +1,34 @@
+@import "../../../sass/values";
+.Hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 70px;
+    &__conatiner{
+        flex-basis: 40%;
+        h1{
+            font-weight: 700;
+            font-size: 2.5rem;
+            line-height: 78.4px;
+            span{
+                background: $main;
+                background-clip: text;
+                color: transparent;
+            }
+        }
+    }
+ &__images{
+    flex-basis: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    gap: 10px;
+    .hero2{
+        margin-top: 60px;
+    }
+    .hero3{
+        margin-top: -60px;
+    }
+ }
+}
