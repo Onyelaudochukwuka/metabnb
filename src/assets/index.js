@@ -8,3 +8,4 @@ export { default as FooterLogo } from './icons/FooterLogo';
 export { default as Facebook } from './icons/Facebook';
 export { default as Twitter } from './icons/Twitter';
 export { default as Instagram } from './icons/Instagram';
+export { default as Filter } from './icons/Filter';
