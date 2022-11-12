@@ -1,17 +1,19 @@
 import React from 'react';
 
+import PropTypes from 'prop-types';
+
 import { Close } from '../../../assets';
 import { Wallet } from '../../atoms';
 
 import style from './index.module.scss';
 
-const PopUp = () => {
+const PopUp = ({ popup, toggle }) => {
   return (
-    <section className={style.PopUp}>
+    <section className={`${style.PopUp} ${popup ? style.show : style.hidden}`}>
       <div className={style.PopUp__container}>
         <header>
           <h3>Connect Wallet</h3>
-          <Close />
+          <Close className={style.PopUp__container__close} onClick={toggle} />
         </header>
         <div className={style.PopUp__container__wallets}>
           <p>Choose your preferred wallet:</p>
@@ -25,4 +27,8 @@ const PopUp = () => {
   );
 };
 
+PopUp.propTypes = {
+  popup: PropTypes.bool,
+  toggle: PropTypes.func,
+};
 export default PopUp;
