@@ -9,5 +9,4 @@ const Hero = () => {
   );
 };
 
-// mastery by robert hilm
 export default Hero;

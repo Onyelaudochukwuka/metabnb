@@ -1,14 +1,24 @@
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 import { Home, NFT } from './pages';
 
 const App = () => (
-  <section>
+  <BrowserRouter>
+    <ScrollToTop />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<NFT />} />
     </Routes>
-  </section>
+  </BrowserRouter>
 );
+const ScrollToTop = () => {
+  const { pathname, hash } = useLocation();
 
+  useEffect(() => {
+    if (hash) return;
+    window.scrollTo(0, 0);
+  }, [pathname, hash]);
+
+  return null;
+};
 export default App;

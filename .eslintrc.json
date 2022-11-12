@@ -5,7 +5,7 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "airbnb"
+        "standard"
     ],
     "overrides": [
     ],
@@ -17,14 +17,8 @@
         "react"
     ],
     "rules": {
-        // eslint rules
-        "quotes": ["error", "single"],
-        "semi": ["error", "always"],
-        "no-console": "off",
-        "no-unused-vars": "off",
-        "no-underscore-dangle": "off",
-        "no-param-reassign": "off",
-        "no-use-before-define": "off",
-        "no-shadow": "off"
+      "quotes": ["error", "single"],
+      "semi": ["error", "always"],
+      "comma-dangle": ["error", "always-multiline"]
     }
 }

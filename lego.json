@@ -2,8 +2,19 @@
   "blocks": [
     {
       "type": "component",
-      "path": "src/components",
+      "path": "src/components/molecules",
       "files": ["JSX", "MODULE_SCSS"]
+    },
+    {
+      "type": "atom",
+      "path": "src/components/atoms",
+      "files": ["JSX", "MODULE_SCSS"]
+    },
+    {
+      "type": "Icon",
+      "path": "src/assets/icons",
+      "isFile": true,
+      "file": "ICON"
     },
     {
       "type": "page",
@@ -27,6 +38,10 @@
     "JSX": {
       "name": "index.jsx",
       "template": "./templates/blockName.jsx"
+    },
+    "ICON": {
+      "name": "<name>.jsx",
+      "template": "./templates/icon.jsx"
     },
     "JS": {
       "name": "<name>.js",
