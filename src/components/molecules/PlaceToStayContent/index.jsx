@@ -14,6 +14,7 @@ const filters = [
   'Off-grid',
   'Farm',
 ];
+
 const PlaceToStayContent = () => {
   return (
     <section className={style.PlaceToStayContent}>
