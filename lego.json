@@ -3,12 +3,12 @@
     {
       "type": "component",
       "path": "src/components",
-      "files": ["JSX", "CSS", "TEST"]
+      "files": ["JSX", "MODULE_SCSS"]
     },
     {
       "type": "page",
       "path": "src/pages",
-      "files": ["JSX", "CSS", "TEST"]
+      "files": ["JSX", "MODULE_SCSS"]
     },
     {
       "type": "reducer",
@@ -26,7 +26,7 @@
   "fileFormats": {
     "JSX": {
       "name": "<name>.jsx",
-      "template": "DEFAULT"
+      "template": "./templates/blockName.jsx"
     },
     "JS": {
       "name": "<name>.js",
@@ -40,13 +40,13 @@
       "name": "<name>.css"
     },
     "SCSS": {
-      "name": "<name>.scss"
+      "name": "index.scss"
     },
     "MODULE_CSS": {
       "name": "<name>.module.css"
     },
     "MODULE_SCSS": {
-      "name": "<name>.module.scss"
+      "name": "index.module.scss"
     },
     "REDUCER":{
       "name": "<name>.jsx",
