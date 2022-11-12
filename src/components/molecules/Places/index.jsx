@@ -74,10 +74,11 @@ const Places = () => {
   return (
     <section className={style.Places}>
       <h2>Inspiration for your next adventure</h2>
+      <div className={style.Places__cards}>
       {placesDetails.map((place, i) => (
         <PlacesCard key={id + i} {...place} />
       ))}
-      <PlacesCard />
+      </div>
     </section>
   );
 };
