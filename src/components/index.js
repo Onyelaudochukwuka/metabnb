@@ -5,3 +5,4 @@ export { default as Places } from './molecules/Places';
 export { default as Cta } from './molecules/Cta';
 export { default as Footer } from './molecules/Footer';
 export { default as PlaceToStayContent } from './molecules/PlaceToStayContent';
+export { default as PopUp } from './molecules/PopUp';
