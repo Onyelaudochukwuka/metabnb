@@ -2,4 +2,7 @@
 .Sponsors{
     display: flex;   
     background: $main;
+    justify-content: space-between;
+    padding: 10px 75px;
+    align-items: center;
 }
