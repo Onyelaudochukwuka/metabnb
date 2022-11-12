@@ -1,7 +1,8 @@
 import React from 'react';
 
-const close = () => (
+const Close = (props) => (
   <svg
+    {...props}
     width="24"
     height="24"
     viewBox="0 0 24 24"
@@ -24,4 +25,5 @@ const close = () => (
     />
   </svg>
 );
-export default close;
+
+export default Close;
