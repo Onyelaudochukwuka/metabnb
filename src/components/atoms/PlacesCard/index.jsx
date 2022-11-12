@@ -13,6 +13,7 @@ const PlacesCard = ({
   distance,
   availability,
   stars,
+  relativeUrl,
 }) => {
   const id = useId();
   const starsArr = Array(stars).fill(null);
@@ -20,7 +21,7 @@ const PlacesCard = ({
   const [liked, setLiked] = useState(false);
   return (
     <section className={style.PlacesCard}>
-      <img src={`/places/${image}.png`} alt="places card" />
+      <img src={`/${relativeUrl ?? 'places'}/${image}.png`} alt="places card" />
       <Like
         className={style.PlacesCard__like}
         fill={liked ? 'red' : '#D7D7D7'}
@@ -65,6 +66,7 @@ PlacesCard.propTypes = {
   distance: PropTypes.string,
   availability: PropTypes.string,
   stars: PropTypes.number,
+  relativeUrl: PropTypes.string,
 };
 
 export default PlacesCard;
