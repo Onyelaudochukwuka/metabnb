@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className={style.Navbar__links}>
         {
           navLinks.map(({ text, to }) => (
-            <NavLink to={to} key={text}>
+            <NavLink to={to} key={text} className={style.Navbar__links__link}>
               {text}
             </NavLink>
           ))
