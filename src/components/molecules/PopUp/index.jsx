@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Close } from '../../../assets';
+import { Wallet } from '../../atoms';
 
 import style from './index.module.scss';
 
@@ -14,6 +15,10 @@ const PopUp = () => {
         </header>
         <div className={style.PopUp__container__wallets}>
           <p>Choose your preferred wallet:</p>
+          <div className={style.PopUp__container__wallets__links}>
+            <Wallet wallet="Metamask" />
+            <Wallet wallet="WalletConnect" />
+          </div>
         </div>
       </div>
     </section>

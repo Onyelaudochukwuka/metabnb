@@ -1,3 +1,21 @@
 .Wallet{
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 5px 20px;
+    border: 1px solid #CFD8DC;
+    border-radius: 12px;
+    transition-property: background-color;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in;
+    cursor: pointer;
+    &:hover{
+        background-color: #F8F9FA;
+    }
+    &__container{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
 }

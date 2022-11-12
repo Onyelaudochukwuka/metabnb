@@ -19,6 +19,16 @@
         }
         &__wallets{
             padding:30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 30px;
+            &__links{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 30px;
+            }
         }
     }
 }
