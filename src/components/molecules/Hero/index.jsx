@@ -5,7 +5,7 @@ import style from './index.module.scss';
 const images = ['hero2', 'hero1', 'hero4', 'hero3'];
 const Hero = () => {
   return (
-    <section className={style.Hero}>
+    <main className={style.Hero}>
       <div className={style.Hero__container}>
         <h1 className={style.Hero__container__heading}>
           Rent a <span>Place</span> away from <span>Home</span> in the{' '}
@@ -22,7 +22,7 @@ const Hero = () => {
           <img src={`${image}.png`} className={style[image]} alt="hero" key={image.replace('/', '')} />
         ))}
       </div>
-    </section>
+    </main>
   );
 };
 
