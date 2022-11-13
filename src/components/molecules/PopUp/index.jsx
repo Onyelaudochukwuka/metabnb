@@ -9,6 +9,9 @@ import style from './index.module.scss';
 
 const PopUp = ({ popUp, toggle, setAccount }) => {
   const [isLoading, setIsLoading] = useState(false);
+  if (isLoading) {
+    toggle();
+  }
   return (
     <section className={`${style.PopUp} ${popUp ? style.show : style.hide}`}>
       <Loader show={isLoading} />
