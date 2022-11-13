@@ -1,19 +1,18 @@
 .ComingSoon {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-
     .ComingSoon__content {
         display: flex;
         flex-direction: column;
         width: 100%;
         align-items: center;
         justify-content: center;
-        gap: 0;
 
         .ComingSoon__illustration {
-            height: 75%;
-            width: auto;
+            width: 30%;
+            @media screen and (max-width: 900px) {
+                width: 50%;
+            }
         }
 
         .ComingSoon__content__heading {
