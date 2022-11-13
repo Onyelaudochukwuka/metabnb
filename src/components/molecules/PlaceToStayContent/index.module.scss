@@ -1,47 +1,50 @@
-.PlaceToStayContent{
-    padding: 50px;
+.PlaceToStayContent {
+  padding: 50px;
+  @media screen and (max-width: 1200px) {
+    padding: 50px 30px;
+  }
+  @media screen and (max-width: 900px) {
+    padding: 50px 15px;
+  }
+  &__filters {
+    display: flex;
+    justify-content: space-between !important;
+    @media screen and (max-width: 900px) {
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 15px;
+    }
+    button {
+    @media screen and (max-width: 900px) {
+        flex-basis: calc(1 / 8 * 100%);
+        white-space: nowrap;
+    }
+    width: 100%;
+      }
+    &__icon {
+      display: flex;
+      gap: 30px;
+      border: 1px solid #b4b4b4;
+      padding: 10px;
+      border-radius: 8px;
+      align-items: center;
+      cursor: pointer;
+      margin-inline: auto;
+      align-self: center;
+    }
+  }
+  &__cards {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
     @media screen and (max-width: 1200px) {
-        padding: 50px 30px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
     }
     @media screen and (max-width: 900px) {
-        padding: 50px 15px;
+      grid-template-columns: repeat(1, 1fr);
+      padding: 15px;
     }
-    &__filters{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: center;
-        @media screen and (max-width: 1200px) {
-            gap: 15px;
-        }
-        button{
-            flex-basis: calc(1/8 * 100%);
-            white-space: nowrap;
-        }
-        &__icon{
-            display: flex;
-            gap: 30px;
-            border: 1px solid #B4B4B4;
-            padding: 10px;
-            border-radius: 8px;
-            align-items: center;
-            cursor: pointer;
-            margin-inline: auto;
-            align-self: center;
-        }
-    }
-        &__cards {
-            padding: 50px 0;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 50px;
-            @media screen and (max-width: 1200px) {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 30px;
-            }
-            @media screen and (max-width: 900px) {
-                grid-template-columns: repeat(1, 1fr);   
-                padding: 15px;
-            }
-        }
+  }
 }
