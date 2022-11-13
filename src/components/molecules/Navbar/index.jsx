@@ -25,7 +25,7 @@ const navLinks = [
     to: '/community',
   },
 ];
-const Navbar = ({ openPopUp }) => {
+const Navbar = ({ openPopUp, account }) => {
   return (
     <section className={style.Navbar}>
       <Logo className={style.Navbar__Logo} />
@@ -36,15 +36,22 @@ const Navbar = ({ openPopUp }) => {
           </NavLink>
         ))}
       </div>
-      <span className={style.Navbar__openWallet} onClick={openPopUp}>
-        Connect wallet
-      </span>
+      {
+        !account
+          ? <span className={style.Navbar__openWallet} onClick={openPopUp}>
+            Connect wallet
+          </span>
+          : <div>
+            <span className={`${style.Navbar__openWallet} ${style.Navbar__openWallet__wallet}`}>{account}</span>
+          </div>
+      }
     </section>
   );
 };
 
 Navbar.propTypes = {
   openPopUp: PropTypes.func,
+  account: PropTypes.string,
 };
 
 export default Navbar;

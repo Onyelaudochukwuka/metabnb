@@ -31,5 +31,10 @@
         font-weight: 400;
         cursor: pointer;
         display: block;
+        &__wallet{
+            width: 150px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
     }
 }
