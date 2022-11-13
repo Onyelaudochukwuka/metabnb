@@ -12,3 +12,4 @@ export { default as Filter } from './icons/Filter';
 export { default as Close } from './icons/Close';
 export { default as LeftArrow } from './icons/LeftArrow';
 export { default as Loading } from './icons/Loading';
+export { default as Err } from './icons/Err';
