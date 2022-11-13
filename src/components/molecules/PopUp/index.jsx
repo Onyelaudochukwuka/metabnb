@@ -10,12 +10,9 @@ import style from './index.module.scss';
 const PopUp = ({ popUp, toggle, setAccount }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
-  if (isLoading) {
-    toggle();
-  }
   return (
     <section className={`${style.PopUp} ${popUp ? style.show : style.hide}`}>
-      <Error errro={isError} />
+      <Error error={isError} />
       <Loader show={isLoading} />
       <div className={style.PopUp__container}>
         <header>
@@ -29,7 +26,7 @@ const PopUp = ({ popUp, toggle, setAccount }) => {
               wallet="Metamask"
               setAccount={setAccount}
               setLoading={(arg) => setIsLoading(arg)}
-              setError={() => setIsError()}
+              setError={(arg) => setIsError(arg)}
             />
             <Wallet
               wallet="WalletConnect"
