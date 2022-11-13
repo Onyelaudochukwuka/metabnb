@@ -5,9 +5,12 @@
   z-index: 10;
   display: grid;
   place-items: center;
+transition: transform 0.5s ease-in-out;
   &__icon{
     animation: spin 1s linear infinite;
-    
+    fill: #fff;
+    width: 40px;
+    height: 40px;
         @keyframes spin {
             from {
                 transform: rotate(0deg);
@@ -18,4 +21,11 @@
             }
         }
   }
+}
+.hide {
+    transform: scale(0);
+}
+
+.show {
+    transform: scale(1);
 }
