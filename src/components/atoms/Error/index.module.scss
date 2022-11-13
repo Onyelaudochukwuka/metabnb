@@ -17,11 +17,12 @@
             justify-content: space-between;
             align-items: center;
             padding: 30px;
+            gap: 30px;
             @media screen and (max-width: 900px) {
                 width: 90%;
             }
             &__icon{
-                width: 50%;
+                width: 40%;
             }
             p{
                 font-size: 1.5rem;
