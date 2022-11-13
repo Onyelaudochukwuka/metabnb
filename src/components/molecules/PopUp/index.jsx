@@ -3,14 +3,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Close } from '../../../assets';
-import { Loading, Wallet } from '../../atoms';
+import { Loader, Wallet } from '../../atoms';
 
 import style from './index.module.scss';
 
 const PopUp = ({ popUp, toggle, setAccount }) => {
   return (
     <section className={`${style.PopUp} ${popUp ? style.show : style.hide}`}>
-      <Loading />
+      <Loader />
       <div className={style.PopUp__container}>
         <header>
           <h3>Connect Wallet</h3>
