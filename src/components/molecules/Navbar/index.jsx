@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
 import PropTypes from 'prop-types';
-import { NavLink } from 'react-router-dom';
 
 import { Logo } from '../../../assets';
+import { NavLink } from '../../atoms';
 
 import style from './index.module.scss';
 // eslint-disable-next-line
@@ -30,7 +30,7 @@ const Navbar = ({ openPopUp, account }) => {
   return (
     <nav className={style.Navbar}>
       <Logo className={style.Navbar__Logo} />
-      <div className={style.Navbar__container}>
+      <div className={`${style.Navbar__container} ${dropDown && style.Navbar__container__active}`}>
         <div className={style.Navbar__container__links}>
         {navLinks.map(({ text, to }) => (
           <NavLink to={to} key={text} className={style.Navbar__container__links__link}>
