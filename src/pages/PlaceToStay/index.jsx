@@ -6,11 +6,9 @@ import style from './index.module.scss';
 
 const PlaceToStay = () => {
   return (
-    <section className={style.NFT}>
-      <Layout>
-        <PlaceToStayContent />
-      </Layout>
-    </section>
+    <Layout className={style.NFT}>
+      <PlaceToStayContent />
+    </Layout>
   );
 };
 

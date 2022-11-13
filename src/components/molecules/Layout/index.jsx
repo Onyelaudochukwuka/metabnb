@@ -13,7 +13,7 @@ const Layout = ({ children, ...props }) => {
     }
   }, [userAccount, popUp]);
   return (
-    <section {...props} className={style.Layout}>
+    <section {...props}>
       <Navbar openPopUp={() => setPopUp(true)} account={userAccount} />
       <PopUp
         {...{
