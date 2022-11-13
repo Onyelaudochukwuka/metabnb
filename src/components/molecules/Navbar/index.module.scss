@@ -17,19 +17,21 @@
             padding: 15px;
         }
     align-items: center;
-    &__links{
+    &__container{
+        display: flex;
         @media screen and (max-width: 900px) {
-            display: none;
-        }
+                display: none;
+            }
+        justify-content: space-between;
+        width: 70%;
+        align-items: center;
+    &__links{
         display: flex;
         justify-content: space-between;
-        flex-basis: 40%;
+        flex-basis: 60%;
         height: fit-content;
     }
     &__openWallet{
-        @media screen and (max-width: 900px) {
-            display: none;
-        }
         background: $main;
         padding: 10px 20px;
         color: #fff;
@@ -43,6 +45,7 @@
             overflow: hidden;
         }
     }
+}
     &__menuIcon{
         width: 30px;
         height: 3px;
