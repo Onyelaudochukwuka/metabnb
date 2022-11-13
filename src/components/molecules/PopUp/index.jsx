@@ -3,17 +3,19 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import { Close } from '../../../assets';
-import { Loader, Wallet } from '../../atoms';
+import { Loader, Wallet, Error } from '../../atoms';
 
 import style from './index.module.scss';
 
 const PopUp = ({ popUp, toggle, setAccount }) => {
   const [isLoading, setIsLoading] = useState(false);
+  const [isError, setIsError] = useState(false);
   if (isLoading) {
     toggle();
   }
   return (
     <section className={`${style.PopUp} ${popUp ? style.show : style.hide}`}>
+      <Error errro={isError} />
       <Loader show={isLoading} />
       <div className={style.PopUp__container}>
         <header>
@@ -23,8 +25,18 @@ const PopUp = ({ popUp, toggle, setAccount }) => {
         <div className={style.PopUp__container__wallets}>
           <p>Choose your preferred wallet:</p>
           <div className={style.PopUp__container__wallets__links}>
-            <Wallet wallet="Metamask" setAccount={setAccount} setLoading={(arg) => setIsLoading(arg)} />
-            <Wallet wallet="WalletConnect" setAccount={setAccount} setLoading={(arg) => setIsLoading(arg)} />
+            <Wallet
+              wallet="Metamask"
+              setAccount={setAccount}
+              setLoading={(arg) => setIsLoading(arg)}
+              setError={() => setIsError()}
+            />
+            <Wallet
+              wallet="WalletConnect"
+              setAccount={setAccount}
+              setLoading={(arg) => setIsLoading(arg)}
+              setError={(arg) => setIsError(arg)}
+            />
           </div>
         </div>
       </div>
