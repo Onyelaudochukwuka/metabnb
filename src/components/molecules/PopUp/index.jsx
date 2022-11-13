@@ -7,7 +7,7 @@ import { Wallet } from '../../atoms';
 
 import style from './index.module.scss';
 
-const PopUp = ({ popUp, toggle }) => {
+const PopUp = ({ popUp, toggle, setAccount }) => {
   return (
     <section className={`${style.PopUp} ${popUp ? style.show : style.hide}`}>
       <div className={style.PopUp__container}>
@@ -18,8 +18,8 @@ const PopUp = ({ popUp, toggle }) => {
         <div className={style.PopUp__container__wallets}>
           <p>Choose your preferred wallet:</p>
           <div className={style.PopUp__container__wallets__links}>
-            <Wallet wallet="Metamask" />
-            <Wallet wallet="WalletConnect" />
+            <Wallet wallet="Metamask" setAccount={setAccount} />
+            <Wallet wallet="WalletConnect" setAccount={setAccount} />
           </div>
         </div>
       </div>
@@ -30,5 +30,6 @@ const PopUp = ({ popUp, toggle }) => {
 PopUp.propTypes = {
   popUp: PropTypes.bool,
   toggle: PropTypes.func,
+  setAccount: PropTypes.func,
 };
 export default PopUp;
