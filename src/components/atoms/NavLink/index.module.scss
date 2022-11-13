@@ -2,8 +2,11 @@
 .NavLink {
   color: $dark-text;
 }
-.active, .NavLink:hover {
+.active,
+.NavLink:hover {
   background-image: $main;
   background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: transparent;
 }
