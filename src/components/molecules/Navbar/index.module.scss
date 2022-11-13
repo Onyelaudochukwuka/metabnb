@@ -3,6 +3,12 @@
     display: flex;
     justify-content: space-between;
     padding: 30px 50px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 7;
     @media screen and (max-width: 1200px) {
             padding: 30px;
         }
