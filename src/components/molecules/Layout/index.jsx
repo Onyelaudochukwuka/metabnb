@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { Navbar, Footer, PopUp } from '../..';
 
@@ -7,10 +7,21 @@ import style from './index.module.scss';
 const Layout = ({ children, ...props }) => {
   const [popUp, setPopUp] = useState(false);
   const [userAccount, setUserAccount] = useState('');
+  useEffect(() => {
+    if (userAccount) {
+      setPopUp(false);
+    }
+  }, [userAccount]);
   return (
     <section {...props} className={style.Layout}>
       <Navbar openPopUp={() => setPopUp(true)} account={userAccount} />
-      <PopUp {...{ popUp, toggle: () => setPopUp((props) => !props), setAccount: (arg) => setUserAccount(arg) }} />
+      <PopUp
+        {...{
+          popUp,
+          toggle: () => setPopUp((props) => !props),
+          setAccount: (arg) => setUserAccount(arg),
+        }}
+      />
       {children}
       <Footer />
     </section>
