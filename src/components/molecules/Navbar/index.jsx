@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
@@ -26,26 +26,29 @@ const navLinks = [
   },
 ];
 const Navbar = ({ openPopUp, account }) => {
+  const [dropDown, setDropDown] = useState(false);
   return (
     <nav className={style.Navbar}>
       <Logo className={style.Navbar__Logo} />
-      <div className={style.Navbar__links}>
+      <div className={style.Navbar__container}>
+        <div className={style.Navbar__container__links}>
         {navLinks.map(({ text, to }) => (
-          <NavLink to={to} key={text} className={style.Navbar__links__link}>
+          <NavLink to={to} key={text} className={style.Navbar__container__links__link}>
             {text}
           </NavLink>
         ))}
       </div>
       {
         !account
-          ? <span className={style.Navbar__openWallet} onClick={openPopUp}>
+          ? <span className={style.Navbar__container__openWallet} onClick={openPopUp}>
             Connect wallet
           </span>
           : <div>
-            <span className={`${style.Navbar__openWallet} ${style.Navbar__openWallet__wallet}`}>{account}</span>
+              <span className={`${style.Navbar__container__openWallet} ${style.Navbar__container__openWallet__wallet}`}>{account}</span>
           </div>
-      }
-      <div className={style.Navbar__menuIcon}></div>
+        }
+      </div>
+      <div className={`${style.Navbar__menuIcon} ${dropDown && style.Navbar__menuIcon__dropped}`} onClick={() => setDropDown(prop => !prop)}></div>
     </nav>
   );
 };
