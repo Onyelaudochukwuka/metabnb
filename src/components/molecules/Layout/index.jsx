@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 
 import { Navbar, Footer, PopUp } from '../..';
 
-import style from './index.module.scss';
 // eslint-disable-next-line
 const Layout = ({ children, ...props }) => {
   const [popUp, setPopUp] = useState(false);
