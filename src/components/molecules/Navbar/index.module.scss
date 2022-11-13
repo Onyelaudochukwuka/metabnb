@@ -43,4 +43,39 @@
             overflow: hidden;
         }
     }
+    &__menuIcon{
+        width: 30px;
+        height: 3px;
+        background: #000;
+        position: relative;
+        display: none;
+        border-radius: 99px;
+        cursor: pointer;
+        @media screen and (max-width: 900px) {
+            display: block;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 0;
+            width: 30px;
+            height: 3px;
+            background: #000;
+            border-radius: 99px;
+            cursor: pointer;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 30px;
+            height: 3px;
+            background: #000;
+            border-radius: 99px;
+            cursor: pointer;
+        }
+
+    }
 }
