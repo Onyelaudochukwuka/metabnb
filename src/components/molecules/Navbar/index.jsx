@@ -27,7 +27,7 @@ const navLinks = [
 ];
 const Navbar = ({ openPopUp, account }) => {
   return (
-    <section className={style.Navbar}>
+    <nav className={style.Navbar}>
       <Logo className={style.Navbar__Logo} />
       <div className={style.Navbar__links}>
         {navLinks.map(({ text, to }) => (
@@ -45,7 +45,7 @@ const Navbar = ({ openPopUp, account }) => {
             <span className={`${style.Navbar__openWallet} ${style.Navbar__openWallet__wallet}`}>{account}</span>
           </div>
       }
-    </section>
+    </nav>
   );
 };
 
