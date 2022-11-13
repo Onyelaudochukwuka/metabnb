@@ -6,13 +6,22 @@ import { LeftArrow } from '../../../assets';
 
 import style from './index.module.scss';
 // eslint-disable-next-line
-const Wallet = ({ wallet, setAccount }) => {
+const Wallet = ({ wallet, setAccount, setLoading }) => {
   const handleConnect = () => {
+    setLoading(true);
     if (wallet === 'Metamask') {
       if (window.ethereum) {
         window.ethereum
           .request({ method: 'eth_requestAccounts' })
-          .then((res) => setAccount(res[0]));
+          .then((res) => {
+            setAccount(res[0]);
+            setLoading(false);
+          })
+          .catch((err) => {
+            // eslint-disable-next-line
+            console.log(err);
+            setLoading(false);
+          });
       }
     }
   };
