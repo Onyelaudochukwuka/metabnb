@@ -19,15 +19,19 @@ const Wallet = ({ wallet, setAccount, setLoading, setError }) => {
           })
           .catch((err) => {
             // eslint-disable-next-line
-            console.log(err);
+            console.log(err, 'error');
             setLoading(false);
             setError(true);
             setTimeout(() => {
               setError(false);
-            }
-            , 3000);
+            }, 3000);
           });
       }
+    } else {
+      setError(true);
+      setTimeout(() => {
+        setError(false);
+      }, 3000);
     }
   };
   return (
