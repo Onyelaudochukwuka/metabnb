@@ -45,6 +45,7 @@ const Navbar = ({ openPopUp, account }) => {
             <span className={`${style.Navbar__openWallet} ${style.Navbar__openWallet__wallet}`}>{account}</span>
           </div>
       }
+      <div className={style.Navbar__menuIcon}></div>
     </nav>
   );
 };
