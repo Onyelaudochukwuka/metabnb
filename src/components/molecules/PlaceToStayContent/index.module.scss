@@ -1,14 +1,23 @@
 .PlaceToStayContent{
     padding: 50px;
     @media screen and (max-width: 1200px) {
-        padding: 30px;
+        padding: 50px 30px;
     }
     @media screen and (max-width: 900px) {
-                padding: 15px;
-            }
+        padding: 50px 15px;
+    }
     &__filters{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        @media screen and (max-width: 1200px) {
+            gap: 15px;
+        }
+        button{
+            flex-basis: calc(1/8 * 100%);
+            white-space: nowrap;
+        }
         &__icon{
             display: flex;
             gap: 30px;
@@ -17,6 +26,8 @@
             border-radius: 8px;
             align-items: center;
             cursor: pointer;
+            margin-inline: auto;
+            align-self: center;
         }
     }
         &__cards {
@@ -25,11 +36,11 @@
             grid-template-columns: repeat(4, 1fr);
             gap: 50px;
             @media screen and (max-width: 1200px) {
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(2, 1fr);
                 gap: 30px;
             }
             @media screen and (max-width: 900px) {
-                grid-template-columns: repeat(2, 1fr);   
+                grid-template-columns: repeat(1, 1fr);   
                 padding: 15px;
             }
         }
