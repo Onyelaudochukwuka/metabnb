@@ -6,7 +6,7 @@ import { LeftArrow } from '../../../assets';
 
 import style from './index.module.scss';
 // eslint-disable-next-line
-const Wallet = ({ wallet, setAccount, setLoading }) => {
+const Wallet = ({ wallet, setAccount, setLoading, setError }) => {
   const handleConnect = () => {
     setLoading(true);
     if (wallet === 'Metamask') {
@@ -21,6 +21,11 @@ const Wallet = ({ wallet, setAccount, setLoading }) => {
             // eslint-disable-next-line
             console.log(err);
             setLoading(false);
+            setError(true);
+            setTimeout(() => {
+              setError(false);
+            }
+            , 3000);
           });
       }
     }
@@ -38,5 +43,8 @@ const Wallet = ({ wallet, setAccount, setLoading }) => {
 
 Wallet.propTypes = {
   wallet: PropTypes.string,
+  setAccount: PropTypes.func,
+  setLoading: PropTypes.func,
+  setError: PropTypes.func,
 };
 export default Wallet;
