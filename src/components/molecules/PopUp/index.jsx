@@ -9,7 +9,7 @@ import style from './index.module.scss';
 
 const PopUp = ({ popUp, toggle, setAccount }) => {
   const [isLoading, setIsLoading] = useState(false);
-  const [isError, setIsError] = useState(true);
+  const [isError, setIsError] = useState(false);
   return (
     <section className={`${style.PopUp} ${popUp ? style.show : style.hide}`}>
       <Error error={isError} />
