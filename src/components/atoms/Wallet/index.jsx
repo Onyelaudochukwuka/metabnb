@@ -9,6 +9,13 @@ import style from './index.module.scss';
 const Wallet = ({ wallet, setAccount, setLoading, setError }) => {
   const handleConnect = () => {
     setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+      setError(true);
+      setTimeout(() => {
+        setError(false);
+      });
+    }, 5000);
     if (wallet === 'Metamask') {
       if (window.ethereum) {
         window.ethereum
