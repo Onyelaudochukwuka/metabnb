@@ -8,10 +8,10 @@ const Layout = ({ children, ...props }) => {
   const [popUp, setPopUp] = useState(false);
   const [userAccount, setUserAccount] = useState('');
   useEffect(() => {
-    if (userAccount) {
+    if (userAccount && popUp) {
       setPopUp(false);
     }
-  }, [userAccount]);
+  }, [userAccount, popUp]);
   return (
     <section {...props} className={style.Layout}>
       <Navbar openPopUp={() => setPopUp(true)} account={userAccount} />
