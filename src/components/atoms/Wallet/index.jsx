@@ -16,8 +16,8 @@ const Wallet = ({ wallet, setAccount, setLoading, setError }) => {
         setError(false);
       });
     }, 5000);
-    if (wallet === 'Metamask') {
-      if (window.ethereum) {
+    if (window.ethereum) {
+      if (wallet === 'Metamask') {
         window.ethereum
           .request({ method: 'eth_requestAccounts' })
           .then((res) => {
