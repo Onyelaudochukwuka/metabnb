@@ -1,9 +1,10 @@
 .Loader {
   position: fixed;
   background: rgba(64, 64, 64, 0.75);
-  z-index: 10;
+  z-index: 2;
   display: grid;
   place-items: center;
+inset: 0;
 transition: transform 0.5s ease-in-out;
   &__icon{
     animation: spin 1s linear infinite;
@@ -27,5 +28,4 @@ transition: transform 0.5s ease-in-out;
 
 .show {
     transform: scale(1);
-    inset: 0;
 }
