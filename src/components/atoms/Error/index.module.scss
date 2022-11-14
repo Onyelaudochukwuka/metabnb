@@ -1,6 +1,5 @@
 .Error{
         position: fixed;
-        inset: 0;
         background: rgba(64, 64, 64, 0.3);
         z-index: 20;
         display: grid;
@@ -37,4 +36,5 @@
 
 .show {
     transform: scale(1);
+    inset: 0;
 }

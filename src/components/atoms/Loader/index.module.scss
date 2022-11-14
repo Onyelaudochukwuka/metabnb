@@ -1,6 +1,5 @@
 .Loader {
   position: fixed;
-  inset: 0;
   background: rgba(64, 64, 64, 0.75);
   z-index: 10;
   display: grid;
@@ -28,4 +27,5 @@ transition: transform 0.5s ease-in-out;
 
 .show {
     transform: scale(1);
+    inset: 0;
 }
